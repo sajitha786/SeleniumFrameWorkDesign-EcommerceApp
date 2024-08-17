@@ -49,7 +49,7 @@ public class StandAloneTest {
 		//waiting till the toast message is visible
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
 		//waiting for the refresh animation to be invisible
-		wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector("#toast-container"))));
+		wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
 		driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
 		
 		List<WebElement> cartItems= driver.findElements(By.cssSelector(".cartSection h3"));
