@@ -1,4 +1,4 @@
-package com.scompany;
+package com.scompany.Tests;
 
 import java.time.Duration;
 import java.util.ArrayList;
