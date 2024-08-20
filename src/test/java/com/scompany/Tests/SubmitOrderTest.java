@@ -21,40 +21,34 @@ import com.scompny.TestComponents.BaseTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-
-
-public class SubmitOrderTest extends BaseTest{
+public class SubmitOrderTest extends BaseTest {
 
 	@Test
 	public void submitOrder() throws IOException {
 		// TODO Auto-generated method stub
-		
-		String itemName= "ZARA COAT 3";
-		String countryName="uni";
-		
-		//Login from the landing page
-		LandingPage landingPage = launchApplication();
-		ProductCatalogue productCatalogue=landingPage.loginApplication("saj@gmail.com", "Sheza@123");
-		
-		//Getting item list
+
+		String itemName = "ZARA COAT 3";
+		String countryName = "uni";
+		// Login from the landing page
+		ProductCatalogue productCatalogue = landingPage.loginApplication("saj@gmail.com", "Sheza@123");
+		// Getting item list
 		List<WebElement> items = productCatalogue.getItemList();
-		
-		//retrieving itemName from the list to a variable
-		//waiting till the toast message is visible
-		//waiting for the refresh animation to be invisible
-		//item added to cart
+
+		// retrieving itemName from the list to a variable
+		// waiting till the toast message is visible
+		// waiting for the refresh animation to be invisible
+		// item added to cart
 		productCatalogue.addProductToCart(itemName);
-		
-		CartPage cartPage=productCatalogue.goToCartPage();
-		Boolean match= cartPage.verifyProductDisplay(itemName);
+
+		CartPage cartPage = productCatalogue.goToCartPage();
+		Boolean match = cartPage.verifyProductDisplay(itemName);
 		Assert.assertTrue(match);
-		
+
 		checkoutPage chkoutPage = cartPage.goToCheckout();
 		chkoutPage.select_Country(countryName);
-		
-		ConfirmationPage confirmationPage =chkoutPage.submitOrder();
+
+		ConfirmationPage confirmationPage = chkoutPage.submitOrder();
 		Assert.assertTrue(confirmationPage.getConfirmationMessage().equalsIgnoreCase("Thankyou for the order."));
-		cartPage.closeTheBrowser();
-	}
+		}
 
 }

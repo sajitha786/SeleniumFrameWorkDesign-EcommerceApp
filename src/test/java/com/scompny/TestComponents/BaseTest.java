@@ -8,6 +8,8 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import com.scompany.pageobjects.LandingPage;
 
@@ -17,6 +19,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 	public WebDriver driver;
+	public LandingPage landingPage;
 	
 	public WebDriver initializeDriver() throws IOException {
 		Properties prop = new Properties();
@@ -24,10 +27,8 @@ public class BaseTest {
 				+"\\src\\main\\java\\com\\scompany\\resources\\GlobalData.properties");
 		prop.load(fis);
 		String browserName= prop.getProperty("browser");
-		System.out.println("hi");
-		
+			
 		if(browserName.equalsIgnoreCase("Chrome")) {
-			System.out.println("hi1");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}else if(browserName.equalsIgnoreCase("Firefox")) {
@@ -42,11 +43,18 @@ public class BaseTest {
 		return driver;
 	}
 	
+	@BeforeMethod
 	public LandingPage launchApplication() throws IOException {
 		driver= initializeDriver();
-		LandingPage landingPage= new LandingPage(driver);
+		landingPage= new LandingPage(driver);
 		landingPage.goTo();
 		return landingPage;
+	 }
+	
+	@AfterMethod
+	public void  closeApplication() {
+		//driver.close();
+		driver.quit();
 	 }
 
 }

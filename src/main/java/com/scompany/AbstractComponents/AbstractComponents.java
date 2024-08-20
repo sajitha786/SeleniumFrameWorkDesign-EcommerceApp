@@ -45,9 +45,4 @@ public class AbstractComponents {
 		wait.until(ExpectedConditions.visibilityOf(drpdwnCountryList));
 	}
 	
-	public void closeTheBrowser() {
-		//driver.close();
-		driver.quit();
-	}
-	
 }

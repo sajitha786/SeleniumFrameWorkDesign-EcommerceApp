@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.scompany.Tests.SubmitOrderTest">
+      <class name="com.scompany.Tests.errorMessageValidation">
         <methods>
-          <include name="submitOrder"/>
+          <include name="closeApplication"/>
+          <include name="launchApplication"/>
+          <include name="messageValidation"/>
         </methods>
-      </class> <!-- com.scompany.Tests.SubmitOrderTest -->
+      </class> <!-- com.scompany.Tests.errorMessageValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
