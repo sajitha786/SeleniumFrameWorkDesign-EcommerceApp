@@ -1,33 +1,26 @@
 package com.scompany.Tests;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.List;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.scompany.pageobjects.CartPage;
-import com.scompany.pageobjects.ConfirmationPage;
-import com.scompany.pageobjects.LandingPage;
-import com.scompany.pageobjects.ProductCatalogue;
 import com.scompany.pageobjects.CheckoutPage;
+import com.scompany.pageobjects.ConfirmationPage;
+import com.scompany.pageobjects.OrderPage;
+import com.scompany.pageobjects.ProductCatalogue;
 import com.scompny.TestComponents.BaseTest;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SubmitOrderTest extends BaseTest {
 
+	String itemName = "ZARA COAT 3";
+	
 	@Test
 	public void submitOrder() throws IOException {
 		// TODO Auto-generated method stub
-
-		String itemName = "ZARA COAT 3";
 		String countryName = "uni";
 		// Login from the landing page
 		ProductCatalogue productCatalogue = landingPage.loginApplication("saj@gmail.com", "Sheza@123");
@@ -51,4 +44,12 @@ public class SubmitOrderTest extends BaseTest {
 		Assert.assertTrue(confirmationPage.getConfirmationMessage().equalsIgnoreCase("Thankyou for the order."));
 		}
 
+	@Test (dependsOnMethods={"submitOrder"})
+	public void orderHistory() {
+		//To verify ZARA COAT 3 is displaying in orders page  
+		ProductCatalogue productCatalogue = landingPage.loginApplication("saj@gmail.com", "Sheza@123");
+		OrderPage orderPage= productCatalogue.goToOrderPage();
+		Boolean match = orderPage.verifyOrderDisplay(itemName);
+		Assert.assertTrue(match);
+	}
 }
