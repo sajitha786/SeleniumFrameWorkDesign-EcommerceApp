@@ -16,7 +16,7 @@ import com.scompany.pageobjects.CartPage;
 import com.scompany.pageobjects.ConfirmationPage;
 import com.scompany.pageobjects.LandingPage;
 import com.scompany.pageobjects.ProductCatalogue;
-import com.scompany.pageobjects.checkoutPage;
+import com.scompany.pageobjects.CheckoutPage;
 import com.scompny.TestComponents.BaseTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -44,7 +44,7 @@ public class SubmitOrderTest extends BaseTest {
 		Boolean match = cartPage.verifyProductDisplay(itemName);
 		Assert.assertTrue(match);
 
-		checkoutPage chkoutPage = cartPage.goToCheckout();
+		CheckoutPage chkoutPage = cartPage.goToCheckout();
 		chkoutPage.select_Country(countryName);
 
 		ConfirmationPage confirmationPage = chkoutPage.submitOrder();

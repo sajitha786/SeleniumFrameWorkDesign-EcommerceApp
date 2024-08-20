@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.scompany.AbstractComponents.AbstractComponents;
 
-public class checkoutPage extends AbstractComponents{
+public class CheckoutPage extends AbstractComponents{
 	WebDriver driver;
 	
-	public checkoutPage(WebDriver driver) {
+	public CheckoutPage(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
 		this.driver=driver;

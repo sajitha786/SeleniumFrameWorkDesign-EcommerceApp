@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-20T22:31:38 GST" name="Default suite" finished-at="2024-08-20T22:31:45 GST" duration-ms="6876">
+  <suite started-at="2024-08-20T23:04:36 GST" name="Suite" finished-at="2024-08-20T23:05:16 GST" duration-ms="40047">
     <groups>
     </groups>
-    <test started-at="2024-08-20T22:31:38 GST" name="Default test" finished-at="2024-08-20T22:31:45 GST" duration-ms="6876">
-      <class name="com.scompany.Tests.errorMessageValidation">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.errorMessageValidation@5e0826e7]" started-at="2024-08-20T22:31:38 GST" name="launchApplication" finished-at="2024-08-20T22:31:44 GST" duration-ms="5680" status="PASS">
+    <test started-at="2024-08-20T23:04:36 GST" name="Submit Order Test" finished-at="2024-08-20T23:04:55 GST" duration-ms="18240">
+      <class name="com.scompany.Tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@5e0826e7]" started-at="2024-08-20T23:04:36 GST" name="launchApplication" finished-at="2024-08-20T23:04:40 GST" duration-ms="3355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="messageValidation()[pri:0, instance:com.scompany.Tests.errorMessageValidation@5e0826e7]" started-at="2024-08-20T22:31:44 GST" name="messageValidation" finished-at="2024-08-20T22:31:45 GST" duration-ms="1028" status="PASS">
+        <test-method signature="submitOrder()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@5e0826e7]" started-at="2024-08-20T23:04:40 GST" name="submitOrder" finished-at="2024-08-20T23:04:54 GST" duration-ms="14646" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- messageValidation -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.errorMessageValidation@5e0826e7]" started-at="2024-08-20T22:31:45 GST" name="closeApplication" finished-at="2024-08-20T22:31:45 GST" duration-ms="140" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@5e0826e7]" started-at="2024-08-20T23:04:54 GST" name="closeApplication" finished-at="2024-08-20T23:04:55 GST" duration-ms="217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- com.scompany.Tests.errorMessageValidation -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.scompany.Tests.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+    <test started-at="2024-08-20T23:04:55 GST" name="Error Message Validations Test" finished-at="2024-08-20T23:05:16 GST" duration-ms="21787">
+      <class name="com.scompany.Tests.ErrorMessageValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@130d63be]" started-at="2024-08-20T23:04:55 GST" name="launchApplication" finished-at="2024-08-20T23:04:58 GST" duration-ms="3033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@130d63be]" started-at="2024-08-20T23:04:58 GST" name="loginErrorValidation" finished-at="2024-08-20T23:04:59 GST" duration-ms="971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@130d63be]" started-at="2024-08-20T23:04:59 GST" name="closeApplication" finished-at="2024-08-20T23:04:59 GST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@130d63be]" started-at="2024-08-20T23:04:59 GST" name="launchApplication" finished-at="2024-08-20T23:05:02 GST" duration-ms="3493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@130d63be]" started-at="2024-08-20T23:05:02 GST" name="productErrorValidation" finished-at="2024-08-20T23:05:16 GST" duration-ms="13834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@130d63be]" started-at="2024-08-20T23:05:16 GST" name="closeApplication" finished-at="2024-08-20T23:05:16 GST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.scompany.Tests.ErrorMessageValidationsTest -->
+    </test> <!-- Error Message Validations Test -->
+  </suite> <!-- Suite -->
 </testng-results>

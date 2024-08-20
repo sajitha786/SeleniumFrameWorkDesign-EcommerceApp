@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Submit Order Test(failed)">
     <classes>
-      <class name="com.scompany.Tests.errorMessageValidation">
+      <class name="com.scompany.Tests.SubmitOrderTest">
         <methods>
           <include name="closeApplication"/>
           <include name="launchApplication"/>
-          <include name="messageValidation"/>
+          <include name="submitOrder"/>
         </methods>
-      </class> <!-- com.scompany.Tests.errorMessageValidation -->
+      </class> <!-- com.scompany.Tests.SubmitOrderTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Submit Order Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
