@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
+<testng-results ignored="3" total="5" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-22T20:43:44 GST" name="Suite" finished-at="2024-08-22T20:44:39 GST" duration-ms="54739">
+  <suite started-at="2024-08-22T23:18:08 GST" name="Suite" finished-at="2024-08-22T23:18:35 GST" duration-ms="26544">
     <groups>
       <group name="Purchase">
-        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:com.scompany.Tests.SubmitOrderTest@3e58a80e]" name="submitOrder" class="com.scompany.Tests.SubmitOrderTest"/>
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:com.scompany.Tests.SubmitOrderTest@4a94ee4]" name="submitOrder" class="com.scompany.Tests.SubmitOrderTest"/>
       </group> <!-- Purchase -->
     </groups>
-    <test started-at="2024-08-22T20:43:44 GST" name="Error Message Validations Test" finished-at="2024-08-22T20:43:44 GST" duration-ms="7">
+    <test started-at="2024-08-22T23:18:08 GST" name="Error Message Validations Test" finished-at="2024-08-22T23:18:08 GST" duration-ms="10">
     </test> <!-- Error Message Validations Test -->
-    <test started-at="2024-08-22T20:43:44 GST" name="Submit Order Test" finished-at="2024-08-22T20:44:39 GST" duration-ms="54739">
+    <test started-at="2024-08-22T23:18:08 GST" name="Submit Order Test" finished-at="2024-08-22T23:18:35 GST" duration-ms="26544">
       <class name="com.scompany.Tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@3e58a80e]" started-at="2024-08-22T20:43:44 GST" name="launchApplication" finished-at="2024-08-22T20:44:03 GST" duration-ms="19271" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@4a94ee4]" started-at="2024-08-22T23:18:09 GST" name="launchApplication" finished-at="2024-08-22T23:18:13 GST" duration-ms="3931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.scompany.Tests.SubmitOrderTest@3e58a80e]" started-at="2024-08-22T20:44:03 GST" name="submitOrder" data-provider="getData" finished-at="2024-08-22T20:44:19 GST" duration-ms="15603" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.scompany.Tests.SubmitOrderTest@4a94ee4]" started-at="2024-08-22T23:18:13 GST" name="submitOrder" data-provider="getData" finished-at="2024-08-22T23:18:27 GST" duration-ms="14823" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,26 +27,90 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@3e58a80e]" started-at="2024-08-22T20:44:19 GST" name="closeApplication" finished-at="2024-08-22T20:44:19 GST" duration-ms="329" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@4a94ee4]" started-at="2024-08-22T23:18:27 GST" name="closeApplication" finished-at="2024-08-22T23:18:28 GST" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@3e58a80e]" started-at="2024-08-22T20:44:19 GST" name="launchApplication" finished-at="2024-08-22T20:44:23 GST" duration-ms="4263" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@4a94ee4]" started-at="2024-08-22T23:18:28 GST" name="launchApplication" finished-at="2024-08-22T23:18:32 GST" duration-ms="4818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.scompany.Tests.SubmitOrderTest@3e58a80e]" started-at="2024-08-22T20:44:23 GST" name="submitOrder" data-provider="getData" finished-at="2024-08-22T20:44:38 GST" duration-ms="14957" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.scompany.Tests.SubmitOrderTest@4a94ee4]" started-at="2024-08-22T23:18:32 GST" name="submitOrder" data-provider="getData" finished-at="2024-08-22T23:18:35 GST" duration-ms="2246" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=Sheza@123, itemName=ZARA COAT 3, email=saj@gmail.com}]]>
+                <![CDATA[{password=Iamking@000, itemName=ADIDAS ORIGINAL, email=anshika@gmail.com}]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-vqa-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1304, 27). Other element would receive the click: <div _ngcontent-vqa-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aabaf4b3a20502ff942a0a5736959598, clickElement {id=f.43F4A0F2B1724E00F81C41C90D8C6F0B.d.33B69A1626070D89169BB32CDFDC6BC6.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\ssaji\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:14648}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:14648/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (aabaf4b3a20502ff942a0a5736959598)] -> css selector: [routerlink*='cart']]
+Session ID: aabaf4b3a20502ff942a0a5736959598]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-vqa-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1304, 27). Other element would receive the click: <div _ngcontent-vqa-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aabaf4b3a20502ff942a0a5736959598, clickElement {id=f.43F4A0F2B1724E00F81C41C90D8C6F0B.d.33B69A1626070D89169BB32CDFDC6BC6.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\ssaji\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:14648}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:14648/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (aabaf4b3a20502ff942a0a5736959598)] -> css selector: [routerlink*='cart']]
+Session ID: aabaf4b3a20502ff942a0a5736959598
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at com.scompany.AbstractComponents.AbstractComponents.goToCartPage(AbstractComponents.java:44)
+at com.scompany.Tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@3e58a80e]" started-at="2024-08-22T20:44:38 GST" name="closeApplication" finished-at="2024-08-22T20:44:39 GST" duration-ms="265" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@4a94ee4]" started-at="2024-08-22T23:18:35 GST" name="closeApplication" finished-at="2024-08-22T23:18:35 GST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
