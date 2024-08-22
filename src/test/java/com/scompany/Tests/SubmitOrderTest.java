@@ -1,9 +1,13 @@
 package com.scompany.Tests;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -53,6 +57,14 @@ public class SubmitOrderTest extends BaseTest {
 		OrderPage orderPage= productCatalogue.goToOrderPage();
 		Boolean match = orderPage.verifyOrderDisplay(itemName);
 		Assert.assertTrue(match);
+	}
+	
+	public String getScreenshot(String testcaseName) throws IOException {
+		TakesScreenshot ts= (TakesScreenshot)driver;
+		File Source = ts.getScreenshotAs(OutputType.FILE);
+		File destination = new File(System.getProperty("user.dir")+"//reports"+testcaseName+".png");
+		FileUtils.copyFile(Source, destination);
+		return System.getProperty("user.dir")+"//reports"+testcaseName+".png";
 	}
 	
 	@DataProvider
