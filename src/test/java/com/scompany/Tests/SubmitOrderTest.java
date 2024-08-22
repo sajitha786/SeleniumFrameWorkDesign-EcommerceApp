@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.scompany.pageobjects.CartPage;
@@ -18,12 +19,12 @@ public class SubmitOrderTest extends BaseTest {
 
 	String itemName = "ZARA COAT 3";
 	
-	@Test
-	public void submitOrder() throws IOException {
+	@Test(dataProvider= "getData",groups= {"Purchase"})
+	public void submitOrder(String email,String password,String itemName) throws IOException {
 		// TODO Auto-generated method stub
 		String countryName = "uni";
 		// Login from the landing page
-		ProductCatalogue productCatalogue = landingPage.loginApplication("saj@gmail.com", "Sheza@123");
+		ProductCatalogue productCatalogue = landingPage.loginApplication(email, password);
 		// Getting item list
 		List<WebElement> items = productCatalogue.getItemList();
 
@@ -51,5 +52,10 @@ public class SubmitOrderTest extends BaseTest {
 		OrderPage orderPage= productCatalogue.goToOrderPage();
 		Boolean match = orderPage.verifyOrderDisplay(itemName);
 		Assert.assertTrue(match);
+	}
+	
+	@DataProvider
+	public Object[][] getData() {
+		return new Object[][] {{"saj@gmail.com","Sheza@123","ZARA COAT 3"},{"anshika@gmail.com","Iamking@000","ADIDAS ORIGINAL"}};
 	}
 }
