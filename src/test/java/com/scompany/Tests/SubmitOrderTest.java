@@ -1,6 +1,7 @@
 package com.scompany.Tests;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -20,11 +21,11 @@ public class SubmitOrderTest extends BaseTest {
 	String itemName = "ZARA COAT 3";
 	
 	@Test(dataProvider= "getData",groups= {"Purchase"})
-	public void submitOrder(String email,String password,String itemName) throws IOException {
+	public void submitOrder(HashMap<String,String> input) throws IOException {
 		// TODO Auto-generated method stub
 		String countryName = "uni";
 		// Login from the landing page
-		ProductCatalogue productCatalogue = landingPage.loginApplication(email, password);
+		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
 		// Getting item list
 		List<WebElement> items = productCatalogue.getItemList();
 
@@ -32,10 +33,10 @@ public class SubmitOrderTest extends BaseTest {
 		// waiting till the toast message is visible
 		// waiting for the refresh animation to be invisible
 		// item added to cart
-		productCatalogue.addProductToCart(itemName);
+		productCatalogue.addProductToCart(input.get("itemName"));
 
 		CartPage cartPage = productCatalogue.goToCartPage();
-		Boolean match = cartPage.verifyProductDisplay(itemName);
+		Boolean match = cartPage.verifyProductDisplay(input.get("itemName"));
 		Assert.assertTrue(match);
 
 		CheckoutPage chkoutPage = cartPage.goToCheckout();
@@ -56,6 +57,16 @@ public class SubmitOrderTest extends BaseTest {
 	
 	@DataProvider
 	public Object[][] getData() {
-		return new Object[][] {{"saj@gmail.com","Sheza@123","ZARA COAT 3"},{"anshika@gmail.com","Iamking@000","ADIDAS ORIGINAL"}};
+		HashMap<String,String> map =new HashMap<String,String>();
+		map.put("email", "saj@gmail.com");
+		map.put("password", "Sheza@123");
+		map.put("itemName", "ZARA COAT 3");
+		
+		HashMap<String,String> map1 =new HashMap<String,String>();
+		map1.put("email", "anshika@gmail.com");
+		map1.put("password", "Iamking@000");
+		map1.put("itemName", "ADIDAS ORIGINAL");
+		
+		return new Object[][] {{map},{map}};
 	}
 }
