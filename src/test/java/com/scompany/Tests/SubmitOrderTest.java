@@ -66,6 +66,8 @@ public class SubmitOrderTest extends BaseTest {
 		FileUtils.copyFile(Source, destination);
 		return System.getProperty("user.dir")+"//reports"+testcaseName+".png";
 	}
+	//Extended Report- 
+	
 	
 	@DataProvider
 	public Object[][] getData() throws IOException {
