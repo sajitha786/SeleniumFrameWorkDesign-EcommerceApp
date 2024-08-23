@@ -13,12 +13,12 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.scompany.TestComponents.BaseTest;
 import com.scompany.pageobjects.CartPage;
 import com.scompany.pageobjects.CheckoutPage;
 import com.scompany.pageobjects.ConfirmationPage;
 import com.scompany.pageobjects.OrderPage;
 import com.scompany.pageobjects.ProductCatalogue;
-import com.scompny.TestComponents.BaseTest;
 
 public class SubmitOrderTest extends BaseTest {
 
