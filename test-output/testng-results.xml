@@ -2,22 +2,22 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-28T18:19:11 GST" name="Suite" finished-at="2024-08-28T18:19:53 GST" duration-ms="42033">
+  <suite started-at="2024-08-28T18:53:07 GST" name="Suite" finished-at="2024-08-28T18:53:42 GST" duration-ms="34936">
     <groups>
       <group name="ErrorHandling">
-        <method signature="ErrorMessageValidationsTest.loginErrorValidation()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@2d0399f4]" name="loginErrorValidation" class="com.scompany.Tests.ErrorMessageValidationsTest"/>
+        <method signature="ErrorMessageValidationsTest.loginErrorValidation()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@14dd7b39]" name="loginErrorValidation" class="com.scompany.Tests.ErrorMessageValidationsTest"/>
       </group> <!-- ErrorHandling -->
       <group name="Purchase">
         <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" name="submitOrder" class="com.scompany.Tests.SubmitOrderTest"/>
       </group> <!-- Purchase -->
     </groups>
-    <test started-at="2024-08-28T18:19:11 GST" name="Error Message Validations Test" finished-at="2024-08-28T18:19:35 GST" duration-ms="23643">
+    <test started-at="2024-08-28T18:53:07 GST" name="Error Message Validations Test" finished-at="2024-08-28T18:53:32 GST" duration-ms="24891">
       <class name="com.scompany.Tests.ErrorMessageValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@2d0399f4]" started-at="2024-08-28T18:19:11 GST" name="launchApplication" finished-at="2024-08-28T18:19:16 GST" duration-ms="4615" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@14dd7b39]" started-at="2024-08-28T18:53:07 GST" name="launchApplication" finished-at="2024-08-28T18:53:13 GST" duration-ms="5807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginErrorValidation()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@2d0399f4]" started-at="2024-08-28T18:19:16 GST" name="loginErrorValidation" finished-at="2024-08-28T18:19:17 GST" duration-ms="1138" status="FAIL">
+        <test-method signature="loginErrorValidation()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@14dd7b39]" started-at="2024-08-28T18:53:13 GST" name="loginErrorValidation" finished-at="2024-08-28T18:53:14 GST" duration-ms="689" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incorrect email or password.] but found [Incorrect email  password.]]]>
@@ -58,31 +58,31 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@2d0399f4]" started-at="2024-08-28T18:19:17 GST" name="closeApplication" finished-at="2024-08-28T18:19:17 GST" duration-ms="135" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@14dd7b39]" started-at="2024-08-28T18:53:14 GST" name="closeApplication" finished-at="2024-08-28T18:53:15 GST" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@2d0399f4]" started-at="2024-08-28T18:19:17 GST" name="launchApplication" finished-at="2024-08-28T18:19:20 GST" duration-ms="3000" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@14dd7b39]" started-at="2024-08-28T18:53:15 GST" name="launchApplication" finished-at="2024-08-28T18:53:18 GST" duration-ms="3261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="productErrorValidation()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@2d0399f4]" started-at="2024-08-28T18:19:20 GST" name="productErrorValidation" finished-at="2024-08-28T18:19:34 GST" duration-ms="14125" status="PASS">
+        <test-method signature="productErrorValidation()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@14dd7b39]" started-at="2024-08-28T18:53:18 GST" name="productErrorValidation" finished-at="2024-08-28T18:53:32 GST" duration-ms="14183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productErrorValidation -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@2d0399f4]" started-at="2024-08-28T18:19:34 GST" name="closeApplication" finished-at="2024-08-28T18:19:35 GST" duration-ms="175" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.ErrorMessageValidationsTest@14dd7b39]" started-at="2024-08-28T18:53:32 GST" name="closeApplication" finished-at="2024-08-28T18:53:32 GST" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- com.scompany.Tests.ErrorMessageValidationsTest -->
     </test> <!-- Error Message Validations Test -->
-    <test started-at="2024-08-28T18:19:11 GST" name="Submit Order Test" finished-at="2024-08-28T18:19:53 GST" duration-ms="42033">
+    <test started-at="2024-08-28T18:53:07 GST" name="Submit Order Test" finished-at="2024-08-28T18:53:42 GST" duration-ms="34936">
       <class name="com.scompany.Tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:19:11 GST" name="launchApplication" finished-at="2024-08-28T18:19:13 GST" duration-ms="2194" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:53:08 GST" name="launchApplication" finished-at="2024-08-28T18:53:14 GST" duration-ms="6090" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:19:13 GST" name="submitOrder" data-provider="getData" finished-at="2024-08-28T18:19:31 GST" duration-ms="17469" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:53:14 GST" name="submitOrder" data-provider="getData" finished-at="2024-08-28T18:53:17 GST" duration-ms="3139" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -93,15 +93,15 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:19:31 GST" name="closeApplication" finished-at="2024-08-28T18:19:31 GST" duration-ms="237" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:53:17 GST" name="closeApplication" finished-at="2024-08-28T18:53:17 GST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:19:31 GST" name="launchApplication" finished-at="2024-08-28T18:19:34 GST" duration-ms="3070" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:53:17 GST" name="launchApplication" finished-at="2024-08-28T18:53:22 GST" duration-ms="5043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:19:34 GST" name="submitOrder" data-provider="getData" finished-at="2024-08-28T18:19:49 GST" duration-ms="14795" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:53:22 GST" name="submitOrder" data-provider="getData" finished-at="2024-08-28T18:53:37 GST" duration-ms="14852" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,19 +112,19 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:19:49 GST" name="closeApplication" finished-at="2024-08-28T18:19:49 GST" duration-ms="234" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:53:37 GST" name="closeApplication" finished-at="2024-08-28T18:53:37 GST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:19:49 GST" name="launchApplication" finished-at="2024-08-28T18:19:52 GST" duration-ms="3039" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:53:37 GST" name="launchApplication" finished-at="2024-08-28T18:53:41 GST" duration-ms="4282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="orderHistory()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:19:52 GST" name="orderHistory" finished-at="2024-08-28T18:19:53 GST" depends-on-methods="com.scompany.Tests.SubmitOrderTest.submitOrder" duration-ms="656" status="PASS">
+        <test-method signature="orderHistory()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:53:41 GST" name="orderHistory" finished-at="2024-08-28T18:53:42 GST" depends-on-methods="com.scompany.Tests.SubmitOrderTest.submitOrder" duration-ms="767" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderHistory -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:19:53 GST" name="closeApplication" finished-at="2024-08-28T18:19:53 GST" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.scompany.Tests.SubmitOrderTest@7a5ceedd]" started-at="2024-08-28T18:53:42 GST" name="closeApplication" finished-at="2024-08-28T18:53:42 GST" duration-ms="152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
