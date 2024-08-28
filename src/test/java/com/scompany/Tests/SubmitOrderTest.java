@@ -59,13 +59,7 @@ public class SubmitOrderTest extends BaseTest {
 		Assert.assertTrue(match);
 	}
 	
-	public String getScreenshot(String testcaseName) throws IOException {
-		TakesScreenshot ts= (TakesScreenshot)driver;
-		File Source = ts.getScreenshotAs(OutputType.FILE);
-		File destination = new File(System.getProperty("user.dir")+"//reports"+testcaseName+".png");
-		FileUtils.copyFile(Source, destination);
-		return System.getProperty("user.dir")+"//reports"+testcaseName+".png";
-	}
+	
 	//Extended Report- 
 	
 	
