@@ -30,7 +30,7 @@ public class CartPage extends AbstractComponents{
 	}
 	
 	
-	public CheckoutPage goToCheckout() {
-		return new CheckoutPage(driver);
+	public CheckOutPage goToCheckout() {
+		return new CheckOutPage(driver);
 	}
 }

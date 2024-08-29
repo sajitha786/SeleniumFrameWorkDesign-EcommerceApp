@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import com.scompany.TestComponents.BaseTest;
 import com.scompany.pageobjects.CartPage;
-import com.scompany.pageobjects.CheckoutPage;
+import com.scompany.pageobjects.CheckOutPage;
 import com.scompany.pageobjects.ConfirmationPage;
 import com.scompany.pageobjects.OrderPage;
 import com.scompany.pageobjects.ProductCatalogue;
@@ -43,7 +43,7 @@ public class SubmitOrderTest extends BaseTest {
 		Boolean match = cartPage.verifyProductDisplay(input.get("itemName"));
 		Assert.assertTrue(match);
 
-		CheckoutPage chkoutPage = cartPage.goToCheckout();
+		CheckOutPage chkoutPage = cartPage.goToCheckout();
 		chkoutPage.select_Country(countryName);
 
 		ConfirmationPage confirmationPage = chkoutPage.submitOrder();
